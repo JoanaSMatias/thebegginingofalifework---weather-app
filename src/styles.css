@@ -1,0 +1,108 @@
+body {
+  margin: 10px;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+h2 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: #455a64;
+}
+
+h3 {
+  border: 2px dotted #214252;
+  padding: 5px 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-size: 15px;
+  max-width: 300px;
+}
+
+#box1 {
+  width: 750px;
+  height: 750px;
+  margin: 100px 100px;
+  display: block;
+  padding-left: 0px;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #12726c;
+  font-size: 30px;
+  box-shadow: 9px 9px 30px rgb(74, 81, 89, 0.5);
+}
+
+#row1 {
+  position: relative;
+  top: 10px;
+  padding: -15px;
+  margin: 90px;
+}
+
+#row2 {
+  position: relative;
+  bottom: 190px;
+  padding: -15px;
+  margin: 180px;
+}
+
+.city {
+  position: relative;
+  top: 20px;
+  border: 3px solid #9ad3bc;
+  border-radius: 5px;
+  padding: 5px 50px;
+  box-shadow: 2px 2px 5px rgb(33, 66, 82, 0.5);
+}
+
+.yourCity {
+  position: relative;
+  top: 60px;
+  right: 45px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #455a64;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.degrees {
+  position: relative;
+  top: 60px;
+  left: 50px;
+  font-size: 55px;
+  font-weight: bold;
+  color: #87a4b2;
+  text-shadow: 2px 2px #455a64;
+  display: inline-block;
+}
+
+.description {
+  position: relative;
+  top: 56px;
+  font-style: italic;
+  left: 110px;
+  font-size: 25px;
+  color: #455a64;
+  display: block;
+}
+.col {
+  font-size: 20px;
+  padding: 5px;
+  border: 3px solid #367693;
+  border-radius: 50%;
+  border-collapse: separate;
+  border-spacing: 10px 0px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(33, 66, 82, 0.5);
+  background: #e3f1f7;
+  color: #34444c;
+}
+
+::placeholder {
+  color: #9ad3bc;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+  text-shadow: 0.8px 0.8px #6f9686;
+}
