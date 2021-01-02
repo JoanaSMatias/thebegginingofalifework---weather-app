@@ -38,7 +38,7 @@ sign.addEventListener("submit", yourCity);
 
 // API Weather por City
 function search(city) {
-  let apiKey = "ccd7e3ef34f8befeaea04a6b52aa4224"
+  let apiKey = "ccd7e3ef34f8befeaea04a6b52aa4224";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);

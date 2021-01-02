@@ -93,7 +93,7 @@ h5 {
   color: #455a64;
   display: block;
 }
-.col {
+#forecast {
   font-size: 20px;
   padding: 5px;
   border: 3px solid #367693;
