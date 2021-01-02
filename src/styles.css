@@ -42,14 +42,14 @@ h5 {
 
 #row1 {
   position: relative;
-  top: 10px;
+  top: -65px;
   padding: -15px;
-  margin: 90px;
+  margin: 85px;
 }
 
 #row2 {
   position: relative;
-  bottom: 190px;
+  bottom: 265px;
   padding: -15px;
   margin: 180px;
 }
