@@ -17,20 +17,48 @@
 <body>
     <div class="container">
         <div id="box1">
-            <h2>Weather App</h2>
-            <h3><span class="now">Right Now:</span></h3>
+            <h1>
+                Weather App
+            </h1>
+            <h2>
+                <span class="now"></span>
+            </h2>
             <form id="city">
-                <input class="city" ~ type="text" placeholder="Search your city!" autocomplete="off" id="cityName"
-                    style="text-align: center" ; />
-                <input type="submit" value="search" style="position: absolute; left: -9999px; width: 1px; height: 1px;"
-                    tabindex="-1" />
-
+                <input 
+                    class="city" 
+                    type="text" 
+                    placeholder="Search your city!" 
+                    autocomplete="off" 
+                    id="cityName"
+                    style="text-align: center"
+                />
+                <input 
+                    type="submit" 
+                    value="search" 
+                    style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+                    tabindex="-1"
+                />
             </form>
-            <h4>
-                <span class="yourCity">Lisbon</span>
-                <span class="degrees">13ºC ☁</span>
-                <div class="description">Rainy</div>
-            </h4>
+            <br />
+            <div class="container" id="cityWeather">
+                <div class="row justify-content-md-center">
+                    <div class="col col-xs"></div>
+                    <div class="col-md-auto">
+                        <span class="yourCity">Lisbon</span>
+                    </div>
+                    <div class="col col-xs"></div>
+                    <div class="col-md-auto">
+                        <span class="degrees">13ºC ☁</span>
+                    </div>
+                    <div class="col col-xs"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <span class="description">Rainy</span>                   
+                    </div>
+                </div>  
+            </div>
             <div class="row" id="row1">
                 <div class="col" id="forecast">
                     <strong>Thrusday</strong>

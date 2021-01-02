@@ -3,7 +3,7 @@ body {
   font-family: "Varela Round", sans-serif;
   text-align: center;
 }
-h2 {
+h1 {
   font-size: 50px;
   text-align: center;
   font-weight: bolder;
@@ -11,7 +11,7 @@ h2 {
   color: #455a64;
 }
 
-h3 {
+h2 {
   border: 2px dotted #214252;
   padding: 5px 10px;
   margin: 0 auto;
@@ -54,6 +54,9 @@ h5 {
   margin: 180px;
 }
 
+#cityWeather {
+  margin: 0 auto;
+}
 .city {
   position: relative;
   top: 20px;
@@ -64,34 +67,23 @@ h5 {
 }
 
 .yourCity {
-  position: relative;
-  top: 60px;
-  right: 45px;
   font-size: 50px;
   font-weight: bold;
   color: #455a64;
   text-transform: capitalize;
-  display: inline-block;
+  text-align: center;
 }
 .degrees {
-  position: relative;
-  top: 60px;
-  left: 50px;
   font-size: 55px;
   font-weight: bold;
   color: #87a4b2;
   text-shadow: 2px 2px #455a64;
-  display: inline-block;
 }
 
 .description {
-  position: relative;
-  top: 56px;
   font-style: italic;
-  left: 110px;
   font-size: 25px;
   color: #455a64;
-  display: block;
 }
 #forecast {
   font-size: 20px;
