@@ -19,8 +19,12 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let degrees = document.querySelector(".degrees")
   let weatherDescription = (response.data.weather[0].main)
+  let humidity = (response.data.main.humidity)
+  let wind = (response.data.wind.speed)
   if (temperature > 17){degrees.innerHTML = `${temperature}ºC 🌞`} else {degrees.innerHTML = `${temperature}ºC ❄`}
   document.querySelector (".description"). innerHTML = weatherDescription;
+  document.querySelector (".humidity"). innerHTML = humidity
+  document.querySelector (".windSpeed"). innerHTML = wind
 }
 
 //Selecting City

@@ -42,14 +42,14 @@ h5 {
 
 #row1 {
   position: relative;
-  top: -65px;
+  top: -50px;
   padding: -15px;
-  margin: 85px;
+  margin: 90px;
 }
 
 #row2 {
   position: relative;
-  bottom: 265px;
+  bottom: 250px;
   padding: -15px;
   margin: 180px;
 }
@@ -82,9 +82,22 @@ h5 {
 
 .description {
   font-style: italic;
-  font-size: 25px;
+  font-size: 15px;
   color: #455a64;
+  font-weight: bold;
 }
+
+#descriptionCity {
+  position: relative;
+  bottom: 10px;
+  left: 150px;
+  border: 1px dashed #12726c;
+  font-size: 10px;
+  color: #455a64;
+  max-width: 146px;
+  margin: 0 auto;
+}
+
 #forecast {
   font-size: 20px;
   padding: 5px;
