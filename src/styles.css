@@ -3,31 +3,8 @@ body {
   font-family: "Varela Round", sans-serif;
   text-align: center;
 }
-h1 {
-  font-size: 50px;
-  text-align: center;
-  font-weight: bolder;
-  margin-top: 50px;
-  color: #455a64;
-}
 
-h2 {
-  border: 2px dotted #214252;
-  padding: 5px 10px;
-  margin: 0 auto;
-  border-radius: 5px;
-  font-size: 15px;
-  max-width: 300px;
-}
-
-h5 {
-  position: relative;
-  bottom: 75px;
-  left: 140px;
-  font-size: 15px;
-}
-
-#box1 {
+#bigContainerWeatherApp {
   width: 750px;
   height: 750px;
   margin: 100px 100px;
@@ -40,51 +17,59 @@ h5 {
   box-shadow: 9px 9px 30px rgb(74, 81, 89, 0.5);
 }
 
-#row1 {
-  position: relative;
-  top: -10px;
-  padding: -15px;
-  margin: 70px;
+#title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: #455a64;
 }
 
-#row2 {
-  position: relative;
-  bottom: 190px;
-  padding: -15px;
-  margin: 160px;
-}
-
-#cityWeather {
+#time {
+  border: 2px dotted #214252;
+  padding: 5px 10px;
   margin: 0 auto;
+  border-radius: 5px;
+  font-size: 15px;
+  max-width: 300px;
 }
-.city {
+
+#cityName {
   position: relative;
   top: 20px;
+  left: 30px;
   border: 3px solid #9ad3bc;
   border-radius: 5px;
   padding: 5px 50px;
   box-shadow: 2px 2px 5px rgb(33, 66, 82, 0.5);
+  display: inline-block;
+  outline: none;
 }
 
-.yourCity {
-  font-size: 50px;
-  font-weight: bold;
-  color: #455a64;
-  text-transform: capitalize;
+::placeholder {
+  color: #9ad3bc;
   text-align: center;
-}
-.degrees {
-  font-size: 45px;
-  font-weight: bold;
-  color: #87a4b2;
-  text-shadow: 2px 2px #455a64;
+  font-size: 35px;
+  font-weight: bolder;
+  text-shadow: 0.8px 0.8px #6f9686;
 }
 
-.description {
-  font-style: italic;
-  font-size: 15px;
-  color: #455a64;
-  font-weight: bold;
+#geoLocationButton {
+  position: relative;
+  top: 20px;
+  right: 40px;
+  display: inline-block;
+  border: 0 solid transparent;
+  background-color: transparent;
+  transition: all 200ms ease;
+  outline: none;
+}
+#geoLocation:hover {
+  cursor: pointer;
+}
+
+#cityDescriptionContainer {
+  margin: 0 auto;
 }
 
 #descriptionBox {
@@ -95,7 +80,22 @@ h5 {
   border-radius: 15px;
 }
 
-#descriptionCity {
+#yourCityName {
+  font-size: 50px;
+  font-weight: bold;
+  color: #455a64;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#degrees {
+  font-size: 45px;
+  font-weight: bold;
+  color: #87a4b2;
+  text-shadow: 2px 2px #455a64;
+}
+
+#descriptionWeather {
   font-size: 10px;
   color: #455a64;
   display: relative;
@@ -103,7 +103,14 @@ h5 {
   bottom: 60px;
 }
 
-#forecast {
+#weatherResume {
+  font-style: italic;
+  font-size: 15px;
+  color: #455a64;
+  font-weight: bold;
+}
+
+#day1 {
   font-size: 20px;
   padding: 5px;
   border: 3px solid #367693;
@@ -116,10 +123,72 @@ h5 {
   color: #34444c;
 }
 
-::placeholder {
-  color: #9ad3bc;
+#day2 {
+  font-size: 20px;
+  padding: 5px;
+  border: 3px solid #367693;
+  border-radius: 50%;
+  border-collapse: separate;
+  border-spacing: 10px 0px;
   text-align: center;
-  font-size: 35px;
-  font-weight: bolder;
-  text-shadow: 0.8px 0.8px #6f9686;
+  box-shadow: 1px 1px 5px rgb(33, 66, 82, 0.5);
+  background: #e3f1f7;
+  color: #34444c;
+}
+#day3 {
+  font-size: 20px;
+  padding: 5px;
+  border: 3px solid #367693;
+  border-radius: 50%;
+  border-collapse: separate;
+  border-spacing: 10px 0px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(33, 66, 82, 0.5);
+  background: #e3f1f7;
+  color: #34444c;
+}
+#day4 {
+  font-size: 20px;
+  padding: 5px;
+  border: 3px solid #367693;
+  border-radius: 50%;
+  border-collapse: separate;
+  border-spacing: 10px 0px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(33, 66, 82, 0.5);
+  background: #e3f1f7;
+  color: #34444c;
+}
+#day5 {
+  font-size: 20px;
+  padding: 5px;
+  border: 3px solid #367693;
+  border-radius: 50%;
+  border-collapse: separate;
+  border-spacing: 10px 0px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(33, 66, 82, 0.5);
+  background: #e3f1f7;
+  color: #34444c;
+}
+
+#forecastRow1 {
+  position: relative;
+  top: -10px;
+  padding: -15px;
+  margin: 70px;
+}
+
+#forecastRow2 {
+  position: relative;
+  bottom: 190px;
+  padding: -15px;
+  margin: 160px;
+}
+
+#codeBy {
+  position: relative;
+  bottom: 75px;
+  left: 140px;
+  font-size: 15px;
 }
