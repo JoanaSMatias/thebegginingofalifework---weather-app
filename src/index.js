@@ -15,6 +15,10 @@ nowToday.innerHTML = (`${date} of ${month}, ${hours}:${minutes}, ${day}`)
 }
 today();
 
+
+//let dateElement = document.querySelector("#currentTime");
+//dateElement.innerHTML = formatDate(today);
+
 //////////////////////////////////////////////////////////////////////////
 
 // Showing Temperature
@@ -24,18 +28,34 @@ function showTemperature(response) {
   let weatherDescription = (response.data.weather[0].main)
   let humidity = (response.data.main.humidity)
   let wind = (response.data.wind.speed)
+  let fahrenheit = Math.round(response.data.main.temp * (9 / 5) + 32);
 
+  if (temperature > 20){degrees.innerHTML = `${temperature}ºC 🌞`} else {degrees.innerHTML = `${temperature}ºC ❄`}
+  
   let yourCityName = document.querySelector("#yourCityName")
   yourCityName.innerHTML = `${response.data.name}`
 
-//let dateElement = document.querySelector("#currentTime");
-//dateElement.innerHTML = formatDate(today);
-
-
-  if (temperature > 17){degrees.innerHTML = `${temperature}ºC 🌞`} else {degrees.innerHTML = `${temperature}ºC ❄`}
   document.querySelector ("#weatherResume"). innerHTML = weatherDescription;
   document.querySelector ("#humidity"). innerHTML = humidity
   document.querySelector ("#windSpeed"). innerHTML = wind
+
+//METRIC BUTTONS
+function handleFahrenheitClick () {
+let degrees= document.querySelector("#degrees");
+if (fahrenheit > 68){degrees.innerHTML = `${fahrenheit}ºF 🌞`} else {degrees.innerHTML = `${fahrenheit}ºF ❄`}
+}
+
+let metricButton = document.querySelector("#metricButton2");
+metricButton.addEventListener("click", handleFahrenheitClick);
+
+function handleCelsiusClick () {
+let degrees= document.querySelector("#degrees");
+if (temperature > 20){degrees.innerHTML = `${temperature}ºC 🌞`} else {degrees.innerHTML = `${temperature}ºC ❄`}
+}
+
+let celsiusButton =document.querySelector("#metricButton1");
+celsiusButton.addEventListener("click", handleCelsiusClick)
+
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -51,6 +71,7 @@ function yourCity(event) {
   }
 let sign = document.querySelector("#yourCityWeatherInput");
 sign.addEventListener("submit", yourCity);
+
 
 /////////////////////////////////////////////////////////////////////////////////////
 // API Weather por City
@@ -81,22 +102,9 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#geoLocationButton");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+///////////////////////////////////////////////////////////////////////////////////
 
 
-// if (weather[input.value] !== undefined) {
-    //let tempfahrenheit = Math.floor(weather[input.value].temp * (9 / 5) + 32);
-   // let temp = Math.floor(weather[input.value].temp);
-
-   // alert(
-     // `It is currently ${
-      //  weather[input.value].temp
-     // }ºC (${tempfahrenheit}ºF) in ${input.value} with a humidity of ${
-      //  weather[input.value].humidity
-     // }%.`
-   // );
- // } else {
-   // alert(`Sorry, we don't know the weather for this city, try going to
-//https://www.google.com/search?q=weather+${input.value}`);
 
 
 

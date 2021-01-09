@@ -94,44 +94,33 @@ body {
   color: #87a4b2;
   text-shadow: 2px 2px #455a64;
 }
-.myButton {
-  box-shadow: 0px 10px 14px -7px #276873;
-  background: linear-gradient(to bottom, #c9d4d8 5%, #c9d4d8 100%);
-  background-color: #87a4b2;
-  border-radius: 8px;
-  display: inline-block;
-  cursor: pointer;
-  color: #727575;
-  font-family: Arial;
-  font-size: 9px;
-  font-weight: bold;
-  padding: 1px 20px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #727575;
+
+#metricButton1 {
   position: relative;
-  bottom: 25px;
-  right: 25px;
+  bottom: 20px;
+  left: 7px;
 }
 
-.myButton:hover {
-  background-color: #c9d4d8;
-}
-.myButton:active {
+#metricButton2 {
   position: relative;
-  top: 1px;
+  bottom: 20px;
+  left: 7px;
 }
 
-#descriptionWeather {
+#metric {
   font-size: 10px;
+}
+#descriptionWeather {
+  font-size: 11px;
   color: #455a64;
   display: relative;
-  left: 130px;
-  bottom: 100px;
+  left: 125px;
+  bottom: 95px;
 }
 
 #weatherResume {
   font-style: italic;
-  font-size: 15px;
+  font-size: 16px;
   color: #455a64;
   font-weight: bold;
 }
