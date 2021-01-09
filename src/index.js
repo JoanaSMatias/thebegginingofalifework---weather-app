@@ -83,6 +83,20 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 
 
+// if (weather[input.value] !== undefined) {
+    //let tempfahrenheit = Math.floor(weather[input.value].temp * (9 / 5) + 32);
+   // let temp = Math.floor(weather[input.value].temp);
+
+   // alert(
+     // `It is currently ${
+      //  weather[input.value].temp
+     // }ºC (${tempfahrenheit}ºF) in ${input.value} with a humidity of ${
+      //  weather[input.value].humidity
+     // }%.`
+   // );
+ // } else {
+   // alert(`Sorry, we don't know the weather for this city, try going to
+//https://www.google.com/search?q=weather+${input.value}`);
 
 
 
@@ -105,16 +119,3 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 
 
-//function retrievePosition(position) {
- // let positionApiKey = "ccd7e3ef34f8befeaea04a6b52aa4224";
- // et lat = position.coords.latitude;
- // let lon = position.coords.longitude;
-  //let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${positionApiKey}`;
-  //console.log (url)
-
-  //axios.get(url).then(showTemperature);
-
-////function getCurrentPosition () {
-//navigator.geolocation.getCurrentPosition(retrievePosition);
-//let button = document.querySelector("button");
-//button.addEventListener("click", getCurrentPosition)//
