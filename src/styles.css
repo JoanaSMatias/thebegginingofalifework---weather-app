@@ -74,7 +74,7 @@ body {
 
 #descriptionBox {
   border: 1px dashed #12726c;
-  padding-right: 95px;
+  padding-right: 80px;
   max-height: 90px;
   text-align: center;
   border-radius: 15px;
@@ -95,16 +95,23 @@ body {
   text-shadow: 2px 2px #455a64;
 }
 
+img {
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+  width: 80px;
+}
+
 #metricButton1 {
   position: relative;
-  bottom: 20px;
-  left: 7px;
+  bottom: 35px;
+  right: 5px;
 }
 
 #metricButton2 {
   position: relative;
-  bottom: 20px;
-  left: 7px;
+  bottom: 35px;
+  right: 15px;
 }
 
 #metric {
@@ -114,8 +121,8 @@ body {
   font-size: 11px;
   color: #455a64;
   display: relative;
-  left: 125px;
-  bottom: 95px;
+  left: 130px;
+  bottom: 110px;
 }
 
 #weatherResume {
